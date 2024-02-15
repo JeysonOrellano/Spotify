@@ -4,7 +4,9 @@ const cors = require('cors')
 const app = epxress()
 const { dbConnect } = require('./config/mongo')
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 4000
+
+console.log(process.env.PORT);
 app.use(cors("*"))
 app.use(epxress.json())
 app.use(epxress.static('public'));
